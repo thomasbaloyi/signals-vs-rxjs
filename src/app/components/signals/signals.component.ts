@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SignalsService } from 'src/app/services/signals.service';
 
 @Component({
   selector: 'app-signals',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class SignalsComponent {
 
+  constructor(public signalsService: SignalsService) { }
+
+  
 }
